@@ -33,7 +33,6 @@ EXPOSE 3000
 
 # Define variáveis de ambiente
 ENV NODE_ENV=production
-ENV PORT=3000
 
 # Comando de inicialização
 CMD ["npm", "start"]

@@ -135,7 +135,7 @@ app.use((error, req, res, next) => {
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 API SSH rodando na porta ${PORT}`);
   console.log(`📡 Endpoint: POST /execute`);
-  console.log(`🔐 Token de autenticação: ${AUTH_TOKEN}`);
+  console.log(`🔐 Token de autenticação: ${AUTH_TOKEN ? 'Configurado' : 'NÃO CONFIGURADO - Defina AUTH_HEADER'}`);
   console.log(`💊 Health check: GET /health`);
 });
 
